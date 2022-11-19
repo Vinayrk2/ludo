@@ -13,7 +13,7 @@ let gamer_number;
 
 
 let moving = new Audio('move.mp3');
-let rolling = new Audio('dice.mp3');
+let rolling = new Audio('pop-dice.mp3');
 
 //player = prompt("enter the number of players :");
 
@@ -232,7 +232,7 @@ function moveTheToken(e){
     // 	//console.log(e.parentNode)
    	// }
 	var i=1;
-	var positionMove = setInterval(move,350);
+	var positionMove = setInterval(move,500);
 
 	
 function move(){
