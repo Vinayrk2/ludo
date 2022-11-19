@@ -95,7 +95,7 @@ function rollTheDice(){
 	flag = false;
 
 	rolling.play();
-
+	rolling.volume = 0.5;
 	if(count == -1){ count = 3;}
 	if(count ==  4){ count = 3;}
 
