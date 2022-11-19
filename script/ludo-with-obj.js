@@ -238,6 +238,8 @@ function moveTheToken(e){
 	
 function move(){
 	// This will check whether the token is at home or wot >>>>
+	moving.play();
+	
 	e.parentNode.style.backgroundColor = previous;
 
 	var moveSafe = e.id.substring(0,2);
@@ -319,7 +321,7 @@ function move(){
 			e.parentNode.style.backgroundColor = "#f9deb3";
 			break;
 	}
-	moving.play();
+	
 
 	if(i<diceValue){
 		i++;
