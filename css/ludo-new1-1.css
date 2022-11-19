@@ -1,0 +1,410 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game{
+   box-sizing: border-box;
+   height: 98vh;
+   width:98vw;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+/*   background-color: darkgray;*/
+}
+
+
+
+#board{
+   margin:0.3%;
+    height: 48vw;
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: 2px double black;
+    box-shadow: -0.3em 0.4em 5px gray;
+}
+
+.box{
+    height:100%;
+    width: 100%;
+    background-color: white;
+}
+
+.green{
+   background-color: #91d667; 
+}
+.red{
+      background-color: #fb9a9e;
+}
+.yellow{
+      background-color: #f8C067;
+}
+.blue{
+   background-color: #89ABE3FF;
+}
+
+.gborder{
+   border: 0.7vh solid #91d667;
+   color:#91d667;
+}
+.rborder{
+   border: 0.7vh  solid #fb9a9e;
+   color:#fb9a9e;
+}
+.yborder{
+   border: 0.7vh  solid #f8C067;
+   color: #f8C067;
+}
+.bborder{
+   border: 0.7vh  solid #89ABE3FF;
+   color:#89ABE3FF;
+}
+
+.house{
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    padding: 6%;
+    display: inline-block;
+}
+
+.square{
+    height: 17%;
+    width: 17%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 0%;
+    font-size:min(3.3vw,3vh);
+}
+
+.square i{
+   font-size: 1em;
+}
+
+.one{
+   top:30%;
+   left:30%;
+}
+.two{
+    top:30%;
+    right:30%;
+ }
+ .three{
+    bottom:30%;
+    left:30%;
+ }
+ .four{
+    bottom:30%;
+    right:30%;
+ }
+
+ .between-home{
+   height: 20.5%; width:20.5%;
+    position: relative;
+    top:39.7%; left:39.8%;
+    z-index:1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('between-home.png');
+/*    background-color: aqua;*/
+/*    border-top: 2.5em solid #fb9a9e;
+    border-right: 2.5em solid #89ABE3FF;
+    border-bottom: 2.5em solid #f8C067; 
+    border-left: 2.5em solid #91d667;*/
+ }
+
+ .playArea{
+    height: 20%;
+    width:40%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+    background-color: white;
+    position: absolute;
+    font-size: 100%;
+ }
+
+ .playArea div{
+   font-size: 1em;
+ }
+
+ .left-cell{
+    top:40%; left: 0%;
+    grid-gap: 2px;
+ }
+ .left-cell div{
+    height: 100%;
+    width: 100%;
+    border:0.5px solid black;
+ }
+ .green-left{
+    background-color: #91d667;
+ }
+ 
+
+.top-cell{
+   top: 10%; left: 30%;
+   grid-gap: 2px;
+   transform: rotate(90deg);
+}
+.top-cell div,  .right-cell div, .bottom-cell div{
+   border: 0.5px solid black;
+}
+.red-top{
+   background-color: #fb9a9e;
+}
+
+ .right-cell{
+    top:40%; right: 0%;
+    grid-gap: 0.2vh;
+    transform: rotate(180deg);
+ }
+ .blue-right{
+    background-color: #89ABE3FF;
+ }
+
+
+ .bottom-cell{
+    bottom: 10%; left: 30%;
+    grid-gap: 2px;
+    transform: rotate(-90deg);
+ }
+ .yellow-bottom{
+    background-color: #f8C067;
+ }
+
+
+.block{
+   height:40%;
+   width: 40%;
+   position: absolute;
+   background-color: lime;
+   z-index: 0;
+}
+
+.greenblock{
+   top:0%; left:0%;
+   z-index: 0;
+}
+
+.redblock{
+   top:0%; right:0%;
+}
+
+.blueblock{
+   bottom:0%; right:0%;
+}
+
+.yellowblock{
+   bottom:0%; left:0%;
+}
+
+.green-token, .yellow-token, .red-token, .blue-token{
+   color:#13a94a;
+   font-size: 20px;
+}
+.yellow-token{
+   color: rgb(242, 176, 118);
+}
+.blue-token{
+   color:royalblue;
+}
+.red-token{
+   color:rgb(244, 114, 114);
+}
+
+.playArea div{
+   height:100%; width:100%;
+}
+.star{
+   background-size:100% 100%;
+}
+.gstar{
+   background-image: url("https://github.com/Vinayrk2/JS-game/blob/main/gstar.jpeg?raw=true");
+   background-size: 100% 100%;
+}
+.rstar{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/gstar.jpeg?raw=true');
+   background-size: 100% 100%;
+}
+.bstar{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/gstar.jpeg?raw=true');
+   background-size: 100% 100%;
+}
+.ystar{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/gstar.jpeg?raw=true');
+   background-size: 100% 100%;
+}
+
+.g-arrow{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/turn-arrow.jpeg?raw=true');
+   background-size: cover;
+}
+.r-arrow{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/turn-arrow-top.png?raw=true');
+   background-size: cover;
+}
+.b-arrow{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/turn-arrow-right.png?raw=true');
+   background-size: cover;
+}
+.y-arrow{
+   background-image: url('https://github.com/Vinayrk2/JS-game/blob/main/turn-arrow-bottom.png?raw=true');
+   background-size: cover;
+}
+
+.lpath , .tpath, .rpath, .bpath{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.tpath{
+   transform: rotate(-90deg);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.bpath{
+   transform: rotate(90deg);
+}
+.rpath{
+   transform:rotate(180deg);
+}
+
+.playArea div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:100%;
+   width:100%;
+}
+
+.between-square{
+   height:20%;
+   width:20%;
+   background-color: transparent;
+   position: absolute;
+   top:40%; left:40%;
+   display: inline-block;
+}
+
+
+.token{
+   text-shadow: 2px 2px 2px black;
+}
+
+.yellow-token{
+   text-shadow: 0px 2px 3px black;
+}
+.green-token{
+   text-shadow: 2px 2px 1px rgb(193, 184, 184);
+}
+.blue-token{
+   text-shadow: 2px 2px 1px rgb(193, 184, 184);
+}
+
+
+#indicator-div{
+height:48vw;
+width:50%;
+display: flex;
+flex-wrap: wrap;
+background-color: aqua;
+align-items: center;
+justify-content: center;
+box-shadow: -0.3em 0.4em 5px gray;
+margin:0.5em;
+}
+
+#indicator-div div{
+   margin:5px;
+}
+
+#number{
+   /*height: 60px;
+   width: 60px;*/
+   height:1em; width:1em;
+   background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border:1px solid black;
+   position: relative;
+   display: none;
+   font-size: 4vw;
+}
+
+#number i{
+   position: relative;
+   font-size: 1em;
+}
+
+#start button{
+   height:28px; width:75px;
+   position: relative;
+}
+
+@media(max-width:450px){
+   .game{
+      flex-direction: column;
+   }
+   *{ margin:0; padding:0; }
+   #board{ 
+      margin-bottom:3vw;
+      width:95vw;
+      height:95vw;
+    }
+    #indicator-div{
+      width:95vw;
+    }
+    #number{
+      height:2.5em; width:2.5em;
+    }
+}
+
+@media(min-width:450px) and (max-width:650px){
+   .game{
+      flex-direction: column;
+/*      font-size: 1.7vh;*/
+   }
+   .square{
+      font-size: 1em;
+   }
+   *{ margin:0; padding:0; }
+   #board{ 
+      margin-bottom:3vw;
+      width:50vh;
+      height:50vh;
+    }
+    #indicator-div{
+      position:relative;
+      width:95vw;
+    }
+    .token{
+      text-shadow: none;
+    }
+ #number{
+      height:2.2em; width:2.2em;
+    }
+
+}
+
+
+@media(min-width:650px){
+   .game{
+      align-items: center;
+   }
+}
+
+@media(min-width:650px) and (max-width:1050px){
+    #number{
+      height:1.3em; width:1.3em;
+    }
+}
