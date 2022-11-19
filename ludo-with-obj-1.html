@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play With Fun Ludo </title>
+    <script src="https://kit.fontawesome.com/20a4a662a5.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="css/ludo-new1-1.css">
+</head>
+<body>
+    
+   <div class="game">
+    <div id="board">
+
+    <div class="greenblock block"></div>
+    <div class="redblock block"></div>
+    <div class="blueblock block"></div>
+    <div class="yellowblock block"></div>
+    <!-- for green box work -->
+         <div class="green house">
+              <div class="box" id="greentokens">
+                <div id="gh1" class="square one green gborder"><i id="gt1" name="green" class="fa-sharp fa-solid fa-location-dot green-token token"></i></div>
+                <div id="gh2" class="square two green gborder"><i id="gt2" name="green" class="fa-sharp fa-solid fa-location-dot green-token token"></i></div>
+                <div id="gh3" class="square three green gborder"><i id="gt3" name="green" class="fa-sharp fa-solid fa-location-dot green-token token"></i></div>
+                <div id="gh4" class="square four green gborder"><i id="gt4" name="green" class="fa-sharp fa-solid fa-location-dot green-token token"></i></div> 
+              </div>
+              
+         </div>
+
+    <!-- for red box work -->
+         <div class="red house" style="right: 0px;">
+              <div class="box" id="redtokens">
+                <div id="rh1" class="square one red rborder">  <i id="rt1" name="red" class="fa-sharp fa-solid fa-location-dot red-token token" ></i></div>
+                <div id="rh2" class="square two red rborder">  <i id="rt2" name="red" class="fa-sharp fa-solid fa-location-dot red-token token"></i></div>
+                <div id="rh3" class="square three red rborder">  <i id="rt3" name="red" class="fa-sharp fa-solid fa-location-dot red-token token"></i></div>
+                <div id="rh4" class="square four red rborder"><i id="rt4" name="red" class="fa-sharp fa-solid fa-location-dot red-token token"></i></div> 
+              </div>
+         </div>
+
+    <!-- for yellow box work -->
+     <div class="yellow house" style="bottom: 0px;">
+        <div class="box" id="yellowtokens">
+          <div id="yh1" class="square one yellow yborder"><i id="yt1" name="blue" class="fa-sharp fa-solid fa-location-dot yellow-token token" ></i></div>
+          <div id="yh2" class="square two yellow yborder"><i id="yt2" name="yellow" class="fa-sharp fa-solid fa-location-dot yellow-token token"></i></div>
+          <div id="yh3" class="square three yellow yborder"><i id="yt3" name="yellow" class="fa-sharp fa-solid fa-location-dot yellow-token token"></i></div>
+          <div id="yh4" class="square four yellow yborder"> <i id="yt4" name="yellow" class="fa-sharp fa-solid fa-location-dot yellow-token token"></i></div> 
+        </div>
+   </div>
+
+   <!-- for blue box work -->
+   <div class="blue house" style="right: 0; bottom: 0;">
+    <div class="box" id="bluetokens">
+      <div id="bh1" class="square one blue bborder"><i id="bt1" name="blue" class="fa-sharp fa-solid fa-location-dot blue-token token" ></i></div>
+      <div id="bh2" class="square two blue bborder"><i id="bt2" name="blue" class="fa-sharp fa-solid fa-location-dot blue-token token"></i></div>
+      <div id="bh3" class="square three blue bborder"><i id="bt3" name="blue" class="fa-sharp fa-solid fa-location-dot blue-token token"></i></div>
+      <div id="bh4" class="square four blue bborder"> <i id="bt4" name="blue" class="fa-sharp fa-solid fa-location-dot blue-token token"></i></div> 
+    </div>
+</div>
+
+<div class="between-home"></div>
+<div class="between-square" id="last-home"></div>
+
+<div class="left-cell box-size playArea">
+    <div class="lpath " id="path52"></div>
+    <div class="lpath  green-left" id="path1"></div>
+    <div class="lpath" id="path2"></div>
+    <div class="lpath " id="path3"></div>
+    <div class="lpath" id="path4"></div>
+    <div class="lpath" id="path5"></div>
+    <div class="lpath  g-arrow" id="path51"></div>
+    <div class="lpath   green-left" id="gs1"></div>
+    <div class="lpath   green-left" id="gs2"></div>
+    <div class="lpath   green-left" id="gs3"></div>
+    <div class="lpath   green-left" id="gs4"></div>
+    <div class="lpath   green-left" id="gs5"></div>
+    <div class="lpath" id="path50"></div>
+    <div class="lpath" id="path49"></div>
+    <div class="lpath  gstar "  id="path48"></div>
+    <div class="lpath " id="path47"></div>
+    <div class="lpath  " id="path46"></div>
+    <div class="lpath " id="path45"></div>
+</div>
+
+<div class="top-cell box-size1 playArea">
+    <div class="tpath " id="path13"></div>
+    <div class="tpath red-top" id="path14"></div>
+    <div class="tpath" id="path15"></div>
+    <div class="tpath" id="path16"></div>
+    <div class="tpath" id="path17"></div>
+    <div class="tpath" id="path18"></div>
+    <div class="tpath r-arrow" id="path12"></div>
+    <div class="tpath  red-top" id="rs1"></div>
+    <div class="tpath  red-top" id="rs2"> </div>
+    <div class="tpath  red-top" id="rs3"></div>
+    <div class="tpath  red-top" id="rs4"></div>
+    <div class="tpath  red-top" id="rs5"></div>
+    <div class="tpath " id="path11"></div>
+    <div class="tpath " id="path10"></div>
+    <div class="tpath  rstar" id="path9"></div>
+    <div class="tpath " id="path8"></div>
+    <div class="tpath " id="path7"></div>
+    <div class="tpath " id="path6"></div>
+</div>
+
+<div class="right-cell box-size playArea">
+    <div class="rpath  " id="path26"></div>
+    <div class="rpath   blue-right" id="path27"></div>
+    <div class="rpath  " id="path28"></div>
+    <div class="rpath  " id="path29"></div>
+    <div class="rpath  " id="path30"></div>
+    <div class="rpath  " id="path31"></div>
+    <div class="rpath  b-arrow" id="path25" ></div>
+    <div class="rpath blue-right" id="bs1"></div>
+    <div class="rpath blue-right" id="bs2"></div>
+    <div class="rpath blue-right" id="bs3"></div>
+    <div class="rpath blue-right" id="bs4"></div>
+    <div class="rpath blue-right" id="bs5"></div>
+    <div class="rpath  " id="path24"></div>
+    <div class="rpath  " id="path23"></div>
+    <div class="rpath  bstar" id="path22"></div>
+    <div class="rpath  " id="path21"></div>
+    <div class="rpath  " id="path20"></div>
+    <div class="rpath  " id="path19"></div>
+</div>
+
+<div class="bottom-cell box-size1 playArea">
+    <div class="bpath  " id="path39"></div>
+    <div class="bpath   yellow-bottom" id="path40"></div>
+    <div class="bpath  " id="path41"></div>
+    <div class="bpath  " id="path42"></div>
+    <div class="bpath  " id="path43"></div>
+    <div class="bpath  " id="path44"></div>
+    <div class="bpath  y-arrow" id="path38"></div>
+    <div class="bpath yellow-bottom" id="ys1"></div>
+    <div class="bpath yellow-bottom" id="ys2"></div>
+    <div class="bpath yellow-bottom" id="ys3"></div>
+    <div class="bpath yellow-bottom" id="ys4"></div>
+    <div class="bpath yellow-bottom" id="ys5"></div>
+    <div class="bpath  " id="path37"></div>
+    <div class="bpath  " id="path36"></div>
+    <div class="bpath  star bstar" id="path35"></div>
+    <div class="bpath  " id="path34"></div>
+    <div class="bpath  " id="path33"></div>
+    <div class="bpath  " id="path32"></div>
+</div>
+
+</div>
+
+
+<div id="indicator-div">
+<div onclick="rollTheDice()" id="number"> </div><br>
+<div id="player_no">
+  <select id="no_of_players" onchange="gamer_number = this.value;">
+    <option value="2"> 2P </option>
+    <option value="3"> 3P </option>
+    <option value="4" selected> 4P </option>
+  </select>
+</div>
+<div id="start"><button onclick="startTheGame()"> Start </button></div>
+<div id="indicate"></div>
+
+</div>
+
+
+</div>
+<script src="ludo-with-obj-6.js" differ="differ"></script>
+
+</body>
+</html>
