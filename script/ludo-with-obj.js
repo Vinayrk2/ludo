@@ -95,8 +95,8 @@ function rollTheDice(){
 	flag = false;
 
 	rolling.play();
-	rolling.volume = 0.5;
-	
+	rolling.volume = (0.3)
+
 	if(count == -1){ count = 3;}
 	if(count ==  4){ count = 3;}
 
@@ -233,12 +233,10 @@ function moveTheToken(e){
     // 	//console.log(e.parentNode)
    	// }
 	var i=1;
-	var positionMove = setInterval(move,500);
+	var positionMove = setInterval(move,550);
 
 	
 function move(){
-	moving.play();
-	
 	// This will check whether the token is at home or wot >>>>
 	e.parentNode.style.backgroundColor = previous;
 
@@ -321,7 +319,7 @@ function move(){
 			e.parentNode.style.backgroundColor = "#f9deb3";
 			break;
 	}
-	
+	moving.play();
 
 	if(i<diceValue){
 		i++;
