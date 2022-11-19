@@ -13,7 +13,7 @@ let gamer_number;
 
 
 let moving = new Audio('move.mp3');
-let rolling = new Audio('roll.mp3');
+let rolling = new Audio('dice.mp3');
 
 //player = prompt("enter the number of players :");
 
