@@ -352,59 +352,141 @@ margin:0.5em;
 }
 
 @media(max-width:450px){
+
    .game{
+
       flex-direction: column;
+
    }
+
    *{ margin:0; padding:0; }
+
    #board{ 
+
       margin-bottom:3vw;
+
       width:95vw;
+
       height:95vw;
+
     }
+
     #indicator-div{
+
       width:95vw;
+
     }
+
     #number{
+
       height:2.5em; width:2.5em;
+
     }
+
+    .green-token, .yellow-token, .red-token, .blue-token{
+
+   font-size: 12px;
+
+}
+
+    #number i{
+
+        font-size:50px;
+
+    }
+
 }
 
 @media(min-width:450px) and (max-width:650px){
+
    .game{
+
       flex-direction: column;
+
 /*      font-size: 1.7vh;*/
+
    }
+
    .square{
+
       font-size: 1em;
+
    }
+
    *{ margin:0; padding:0; }
+
    #board{ 
+
       margin-bottom:3vw;
+
       width:50vh;
+
       height:50vh;
+
     }
+
     #indicator-div{
+
       position:relative;
+
       width:95vw;
+
     }
+
     .token{
+
       text-shadow: none;
+
     }
+
  #number{
+
       height:2.2em; width:2.2em;
+
     }
+
+  .green-token, .yellow-token, .red-token, .blue-token{
+
+   font-size: 16px;
 
 }
 
+}
 
 @media(min-width:650px){
+
    .game{
+
       align-items: center;
+
    }
+
+   .green-token, .yellow-token, .red-token, .blue-token{
+
+   font-size: 16px;
+
+}
+
 }
 
 @media(min-width:650px) and (max-width:1050px){
+
+	i{
+
+	   font-size:14px;
+
+	}
+
     #number{
+
       height:1.3em; width:1.3em;
+
     }
+
+    .green-token, .yellow-token, .red-token, .blue-token{
+
+   font-size: 20px;
+
+}
+
 }
