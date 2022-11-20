@@ -295,3 +295,9 @@
 .blue-token{
    text-shadow: 2px 2px 1px rgb(193, 184, 184);
 }
+
+@media(min-width:800px) and (max-width:1250px){
+    .token{
+        font-size:1.5vw;
+    
+}
