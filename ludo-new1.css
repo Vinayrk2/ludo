@@ -108,13 +108,6 @@
  }
 
  .left-cell{
-   /* display: grid;
-    height: 20%;
-    width:40%;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(3,1fr);
-    background-color: white;
-    position: absolute;*/
     top:40%; left: 0%;
     grid-gap: 2px;
  }
@@ -141,54 +134,26 @@
 }
 
  .right-cell{
-    /*display: grid;
-    height: 20%;
-    width:40%;
-    grid-template-columns: repeat(6,1fr);
-    background-color: white;
-    position: absolute;*/
     top:40%; right: 0%;
     grid-gap: 2px;
     transform: rotate(180deg);
  }
-/* .right-cell div{
-    height: 100%;
-    width: 100%;
-    border:1px solid black;
- }*/
+
  .blue-right{
     background-color: #89ABE3FF;
  }
 
 
  .bottom-cell{
-   /* display: grid;
-    height: 40%;
-    width: 20%;
-    grid-template-columns: repeat(3,1fr);
-    background-color: white;
-    position: absolute;*/
     bottom: 10%; left: 30%;
     grid-gap: 2px;
     transform: rotate(-90deg);
-    /*transform: rotate(90deg);*/
-    /*transform: rotateX(180deg);*/
- }/*
- .bottom-cell div{
-    height: 100%;
-    width: 100%;
-    border:1px solid black;
- }*/
+ }
+
  .yellow-bottom{
     background-color: #f8C067;
  }
-/*.box-size{
-    grid-template-rows: repeat(3,1fr);
-}
-.box-size1{
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(6,1fr);
-}*/
+
 #number{
          height: 50px;
          width: 50px;
@@ -201,13 +166,6 @@
          align-items: center;
          border:1px solid black;
       }
-
-/* .safe-start{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   transform: rotate(-90deg);
-} */
 
 .block{
    height:40%;
@@ -235,7 +193,6 @@
 }
 
 .green-token, .yellow-token, .red-token, .blue-token{
-/*   position: absolute;*/
    color:#13a94a;
    font-size: 20px;
 }
@@ -248,73 +205,7 @@
 .red-token{
    color:rgb(244, 114, 114);
 }
-/*#gt1{
-   top: 13.80%;left: 14.15%;
-}
-#gt2{
-   top: 13.80%;left: 23.40%;
-}
-#gt3{
-   top: 23%;left: 14.15%;
-}
-#gt4{
-   top: 23%;left: 23.40%;
-}
 
-.yellow-token{
-   position: absolute;
-   color: navy;
-   font-size: 20px;
-}
-#yt1{
-   bottom: 13.80%;left: 14.15%;
-}
-#yt2{
-   bottom: 13.80%;left: 23.40%;
-}
-#yt3{
-   bottom: 23%;left: 14.15%;
-}
-#yt4{
-   bottom: 23%;left: 23.40%;
-}
-
-.red-token{
-   position: absolute;
-   color:red;
-   font-size: 20px;
-}
-#rt1{
-   top: 13.80%;right: 14.15%;
-}
-#rt2{
-   top: 13.80%;right: 23.40%;
-}
-#rt3{
-   top: 23%;right: 14.15%;
-}
-#rt4{
-   top: 23%;right: 23.40%;
-}
-
-.blue-token{
-   position: absolute;
-   color:blue;
-   font-size: 20px;
-}
-#bt1{
-  bottom: 13.80%;right: 14.15%;
-}
-#bt2{
-  bottom: 13.80%;right: 23.40%;
-}
-#bt3{
-   bottom: 23%;right: 14.15%;
-}
-#bt4{
-   bottom: 23%;right: 23.40%;
-}
-*/
 .playArea div{
    height:100%; width:100%;
 }
