@@ -233,7 +233,7 @@ function moveTheToken(e){
     // 	//console.log(e.parentNode)
    	// }
 	var i=1;
-	var positionMove = setInterval(move,350);
+	var positionMove = setInterval(move,450);
 
 	
 function move(){
